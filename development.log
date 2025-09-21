@@ -1,0 +1,598 @@
+{"command":"git --version","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:37-04:00"}
+{"level":"info","msg":"git --version (22.7014ms)","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git -C C:\\Users\\nicol\\foo rev-parse --path-format=absolute --show-toplevel --absolute-git-dir --git-common-dir --is-bare-repository --show-superproject-working-tree","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"git -C C:\\Users\\nicol\\foo rev-parse --path-format=absolute --show-toplevel --absolute-git-dir --git-common-dir --is-bare-repository --show-superproject-working-tree (28.5794ms)","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git -C C:\\Users\\nicol\\foo rev-parse --path-format=absolute --show-toplevel --absolute-git-dir --git-common-dir --is-bare-repository --show-superproject-working-tree","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"git -C C:\\Users\\nicol\\foo rev-parse --path-format=absolute --show-toplevel --absolute-git-dir --git-common-dir --is-bare-repository --show-superproject-working-tree (36.6372ms)","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"starting main loop","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"Updating is currently not supported for windows until we can fix permission issues","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"refreshing all scopes in async mode","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"Refresh took 0s","time":"2025-09-20T19:54:38-04:00"}
+{"command":"cmd /c title foo - Lazygit","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git fetch --all --no-write-fetch-head","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git for-each-ref --sort=-committerdate --format=%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)%00%(push:track)%00%(subject)%00%(objectname)%00%(committerdate:unix) refs/heads","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git tag --list -n --sort=-creatordate","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git branch --show-current","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git stash list -z --pretty=%H|%ct|%gs","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"cmd /c title foo - Lazygit (13.315ms)","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"git for-each-ref --sort=-committerdate --format=%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)%00%(push:track)%00%(subject)%00%(objectname)%00%(committerdate:unix) refs/heads (37.8079ms)","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"git branch --show-current (37.7335ms)","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"git for-each-ref --sort=-committerdate --format=%(refname) refs/remotes (38.372ms)","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"git stash list -z --pretty=%H|%ct|%gs (37.7918ms)","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"postRefreshUpdate for stash took 0s","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"postRefreshUpdate for remotes took 0s","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"postRefreshUpdate for remoteBranches took 0s","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"git tag --list -n --sort=-creatordate (39.4003ms)","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"git -c log.showSignature=false log -g --format=+%H%x00%ct%x00%gs%x00%P (39.4003ms)","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"postRefreshUpdate for tags took 0s","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"postRefreshUpdate for reflogCommits took 0s","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git status --untracked-files=all --porcelain -z --find-renames=50%","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git symbolic-ref --short HEAD","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git rev-parse --symbolic-full-name main@{u}","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git rev-parse --symbolic-full-name master@{u}","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git rev-parse --symbolic-full-name deploy@{u}","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"git fetch --all --no-write-fetch-head (59.2899ms)","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"refreshing the following scopes in sync mode: branches,commits,remotes,tags","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git tag --list -n --sort=-creatordate","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git rev-parse --symbolic-full-name master@{u}","level":"error","msg":"fatal: no such branch: 'master'\n","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"git rev-parse --symbolic-full-name master@{u} (36.7422ms)","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"git log HEAD --topo-order --oneline --pretty=format:+%H%x00%at%x00%aN%x00%ae%x00%P%x00%m%x00%D%x00%s --abbrev=40 -300 --no-show-signature -- (36.7422ms)","time":"2025-09-20T19:54:38-04:00"}
+{"level":"debug","msg":"Error getting git config value for key: rebase.updateRefs. Error: the key is not found for [git config --get --null rebase.updateRefs]","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git rev-parse --symbolic-full-name main@{u}","level":"error","msg":"fatal: no such branch: 'main'\n","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"git rev-parse --symbolic-full-name main@{u} (37.2486ms)","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"git symbolic-ref --short HEAD (37.7745ms)","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"git status --untracked-files=all --porcelain -z --find-renames=50% (38.8228ms)","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git rev-parse --symbolic-full-name deploy@{u}","level":"error","msg":"fatal: no such branch: 'deploy'\n","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"git rev-parse --symbolic-full-name deploy@{u} (37.7785ms)","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git rev-parse --verify --quiet refs/remotes/origin/master","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git rev-parse --verify --quiet refs/remotes/origin/main","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git worktree list --porcelain","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git rev-parse --verify --quiet refs/remotes/origin/deploy","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"git tag --list -n --sort=-creatordate (33.5206ms)","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"git -c log.showSignature=false log -g --format=+%H%x00%ct%x00%gs%x00%P (32.9986ms)","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"git for-each-ref --sort=-committerdate --format=%(refname) refs/remotes (32.9986ms)","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"postRefreshUpdate for tags took 0s","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"postRefreshUpdate for reflogCommits took 0s","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"refreshed reflog in 36.1386ms","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"refreshed tags in 36.1386ms","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"postRefreshUpdate for remotes took 0s","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"postRefreshUpdate for remoteBranches took 0s","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"refreshed remotes in 36.1386ms","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"postRefreshUpdate for submodules took 0s","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git -C C:/Users/nicol/foo diff --no-ext-diff --submodule --unified=3 --color=always --find-renames=50% --no-index -- /dev/null bar","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"postRefreshUpdate for files took 3.1302ms","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git rev-parse --verify --quiet refs/remotes/origin/deploy","level":"error","msg":"","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"git rev-parse --verify --quiet refs/remotes/origin/deploy (33.5941ms)","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git rev-parse --verify --quiet refs/remotes/origin/main","level":"error","msg":"","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"git rev-parse --verify --quiet refs/remotes/origin/main (35.1516ms)","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git rev-parse --verify --quiet refs/remotes/origin/master","level":"error","msg":"","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"git rev-parse --verify --quiet refs/remotes/origin/master (35.6488ms)","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"git worktree list --porcelain (34.1261ms)","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git -C C:/Users/nicol/foo rev-parse --path-format=absolute --absolute-git-dir","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git rev-parse --verify --quiet refs/heads/deploy","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git rev-parse --verify --quiet refs/heads/master","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git rev-parse --verify --quiet refs/heads/main","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:38-04:00"}
+{"level":"error","msg":"Unexpected error when running cmd task: exit status 1; Failed command: c:\\program files\\git\\cmd\\git.exe [git -C C:/Users/nicol/foo diff --no-ext-diff --submodule --unified=3 --color=always --find-renames=50% --no-index -- /dev/null bar]","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"git -C C:/Users/nicol/foo rev-parse --path-format=absolute --absolute-git-dir (28.0613ms)","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"postRefreshUpdate for worktrees took 0s","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"postRefreshUpdate for localBranches took 532.9µs","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git rev-parse --verify --quiet refs/heads/main","level":"error","msg":"","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"git rev-parse --verify --quiet refs/heads/main (28.5927ms)","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git rev-parse --verify --quiet refs/heads/master","level":"error","msg":"","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"git rev-parse --verify --quiet refs/heads/master (29.1129ms)","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git rev-parse --verify --quiet refs/heads/deploy","level":"error","msg":"","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"git rev-parse --verify --quiet refs/heads/deploy (29.1129ms)","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git rev-list refs/heads/main ^main@{u}","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"git rev-list refs/heads/main ^main@{u} (19.965ms)","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git rev-list refs/heads/main ^main@{u}","level":"error","msg":"fatal: ambiguous argument 'refs/heads/main': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n'git \u003ccommand\u003e [\u003crevision\u003e...] -- [\u003cfile\u003e...]'\n","time":"2025-09-20T19:54:38-04:00"}
+{"level":"debug","msg":"using cache for key rebase.updateRefs","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"postRefreshUpdate for commits took 0s","time":"2025-09-20T19:54:38-04:00"}
+{"level":"debug","msg":"using cache for key rebase.updateRefs","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git branch --show-current","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"git branch --show-current (19.5072ms)","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git rev-list refs/heads/main ^main@{u}","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"git log HEAD --topo-order --oneline --pretty=format:+%H%x00%at%x00%aN%x00%ae%x00%P%x00%m%x00%D%x00%s --abbrev=40 -300 --no-show-signature -- (21.8465ms)","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"git rev-list refs/heads/main ^main@{u} (21.3308ms)","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git rev-list refs/heads/main ^main@{u}","level":"error","msg":"fatal: ambiguous argument 'refs/heads/main': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n'git \u003ccommand\u003e [\u003crevision\u003e...] -- [\u003cfile\u003e...]'\n","time":"2025-09-20T19:54:38-04:00"}
+{"level":"debug","msg":"using cache for key rebase.updateRefs","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"postRefreshUpdate for commits took 517.3µs","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"refreshed commits and commit files in 158.4949ms","time":"2025-09-20T19:54:38-04:00"}
+{"level":"debug","msg":"using cache for key rebase.updateRefs","time":"2025-09-20T19:54:38-04:00"}
+{"level":"debug","msg":"using cache for key rebase.updateRefs","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git for-each-ref --sort=-committerdate --format=%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)%00%(push:track)%00%(subject)%00%(objectname)%00%(committerdate:unix) refs/heads","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"git for-each-ref --sort=-committerdate --format=%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)%00%(push:track)%00%(subject)%00%(objectname)%00%(committerdate:unix) refs/heads (21.4866ms)","time":"2025-09-20T19:54:38-04:00"}
+{"command":"git symbolic-ref --short HEAD","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"git symbolic-ref --short HEAD (20.7483ms)","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"postRefreshUpdate for localBranches took 0s","time":"2025-09-20T19:54:38-04:00"}
+{"level":"debug","msg":"using cache for key rebase.updateRefs","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"refreshed branches in 205.4015ms","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"Refresh took 205.4015ms","time":"2025-09-20T19:54:38-04:00"}
+{"level":"info","msg":"refreshing all scopes in async mode","time":"2025-09-20T19:54:42-04:00"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2025-09-20T19:54:42-04:00"}
+{"level":"info","msg":"Refresh took 0s","time":"2025-09-20T19:54:42-04:00"}
+{"command":"git stash list -z --pretty=%H|%ct|%gs","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:42-04:00"}
+{"command":"git for-each-ref --sort=-committerdate --format=%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)%00%(push:track)%00%(subject)%00%(objectname)%00%(committerdate:unix) refs/heads","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:42-04:00"}
+{"command":"git status --untracked-files=all --porcelain -z --find-renames=50%","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:42-04:00"}
+{"command":"git branch --show-current","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:42-04:00"}
+{"command":"git tag --list -n --sort=-creatordate","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:42-04:00"}
+{"level":"info","msg":"git stash list -z --pretty=%H|%ct|%gs (36.2699ms)","time":"2025-09-20T19:54:42-04:00"}
+{"level":"info","msg":"postRefreshUpdate for stash took 0s","time":"2025-09-20T19:54:42-04:00"}
+{"level":"info","msg":"git branch --show-current (35.7556ms)","time":"2025-09-20T19:54:42-04:00"}
+{"level":"info","msg":"git status --untracked-files=all --porcelain -z --find-renames=50% (35.7556ms)","time":"2025-09-20T19:54:42-04:00"}
+{"level":"info","msg":"git for-each-ref --sort=-committerdate --format=%(refname) refs/remotes (36.2699ms)","time":"2025-09-20T19:54:42-04:00"}
+{"level":"info","msg":"git for-each-ref --sort=-committerdate --format=%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)%00%(push:track)%00%(subject)%00%(objectname)%00%(committerdate:unix) refs/heads (36.2699ms)","time":"2025-09-20T19:54:42-04:00"}
+{"level":"info","msg":"postRefreshUpdate for remotes took 0s","time":"2025-09-20T19:54:42-04:00"}
+{"level":"info","msg":"git -c log.showSignature=false log -g --format=+%H%x00%ct%x00%gs%x00%P (35.7556ms)","time":"2025-09-20T19:54:42-04:00"}
+{"level":"info","msg":"postRefreshUpdate for remoteBranches took 0s","time":"2025-09-20T19:54:42-04:00"}
+{"level":"info","msg":"git tag --list -n --sort=-creatordate (35.7556ms)","time":"2025-09-20T19:54:42-04:00"}
+{"level":"info","msg":"postRefreshUpdate for reflogCommits took 0s","time":"2025-09-20T19:54:42-04:00"}
+{"level":"info","msg":"postRefreshUpdate for tags took 0s","time":"2025-09-20T19:54:42-04:00"}
+{"command":"git symbolic-ref --short HEAD","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:42-04:00"}
+{"command":"git rev-list refs/heads/main ^main@{u}","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:42-04:00"}
+{"level":"info","msg":"postRefreshUpdate for submodules took 0s","time":"2025-09-20T19:54:42-04:00"}
+{"command":"git -C C:/Users/nicol/foo diff --no-ext-diff --submodule --unified=3 --color=always --find-renames=50% --no-index -- /dev/null bar","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:42-04:00"}
+{"level":"info","msg":"postRefreshUpdate for files took 2.621ms","time":"2025-09-20T19:54:42-04:00"}
+{"level":"info","msg":"git log HEAD --topo-order --oneline --pretty=format:+%H%x00%at%x00%aN%x00%ae%x00%P%x00%m%x00%D%x00%s --abbrev=40 -300 --no-show-signature -- (24.6143ms)","time":"2025-09-20T19:54:42-04:00"}
+{"level":"info","msg":"git rev-list refs/heads/main ^main@{u} (25.4451ms)","time":"2025-09-20T19:54:42-04:00"}
+{"command":"git rev-list refs/heads/main ^main@{u}","level":"error","msg":"fatal: ambiguous argument 'refs/heads/main': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n'git \u003ccommand\u003e [\u003crevision\u003e...] -- [\u003cfile\u003e...]'\n","time":"2025-09-20T19:54:42-04:00"}
+{"level":"info","msg":"git symbolic-ref --short HEAD (25.9627ms)","time":"2025-09-20T19:54:42-04:00"}
+{"level":"debug","msg":"using cache for key rebase.updateRefs","time":"2025-09-20T19:54:42-04:00"}
+{"level":"info","msg":"postRefreshUpdate for commits took 0s","time":"2025-09-20T19:54:42-04:00"}
+{"level":"debug","msg":"using cache for key rebase.updateRefs","time":"2025-09-20T19:54:42-04:00"}
+{"command":"git worktree list --porcelain","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:42-04:00"}
+{"level":"error","msg":"Unexpected error when running cmd task: exit status 1; Failed command: c:\\program files\\git\\cmd\\git.exe [git -C C:/Users/nicol/foo diff --no-ext-diff --submodule --unified=3 --color=always --find-renames=50% --no-index -- /dev/null bar]","time":"2025-09-20T19:54:42-04:00"}
+{"level":"info","msg":"git worktree list --porcelain (20.6235ms)","time":"2025-09-20T19:54:42-04:00"}
+{"command":"git -C C:/Users/nicol/foo rev-parse --path-format=absolute --absolute-git-dir","level":"debug","msg":"RunCommand","time":"2025-09-20T19:54:42-04:00"}
+{"level":"info","msg":"git -C C:/Users/nicol/foo rev-parse --path-format=absolute --absolute-git-dir (18.9813ms)","time":"2025-09-20T19:54:42-04:00"}
+{"level":"info","msg":"postRefreshUpdate for worktrees took 0s","time":"2025-09-20T19:54:42-04:00"}
+{"level":"info","msg":"postRefreshUpdate for localBranches took 0s","time":"2025-09-20T19:54:42-04:00"}
+{"level":"debug","msg":"using cache for key rebase.updateRefs","time":"2025-09-20T19:54:42-04:00"}
+{"command":"git --version","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git --version (20.4787ms)","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git -C C:\\Users\\nicol\\foo rev-parse --path-format=absolute --show-toplevel --absolute-git-dir --git-common-dir --is-bare-repository --show-superproject-working-tree","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git -C C:\\Users\\nicol\\foo rev-parse --path-format=absolute --show-toplevel --absolute-git-dir --git-common-dir --is-bare-repository --show-superproject-working-tree (28.6467ms)","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git -C C:\\Users\\nicol\\foo rev-parse --path-format=absolute --show-toplevel --absolute-git-dir --git-common-dir --is-bare-repository --show-superproject-working-tree","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git -C C:\\Users\\nicol\\foo rev-parse --path-format=absolute --show-toplevel --absolute-git-dir --git-common-dir --is-bare-repository --show-superproject-working-tree (28.9292ms)","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"starting main loop","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"Updating is currently not supported for windows until we can fix permission issues","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"refreshing all scopes in async mode","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"Refresh took 0s","time":"2025-09-20T19:55:06-04:00"}
+{"command":"cmd /c title foo - Lazygit","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git fetch --all --no-write-fetch-head","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git branch --show-current","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git stash list -z --pretty=%H|%ct|%gs","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git tag --list -n --sort=-creatordate","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git for-each-ref --sort=-committerdate --format=%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)%00%(push:track)%00%(subject)%00%(objectname)%00%(committerdate:unix) refs/heads","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"cmd /c title foo - Lazygit (12.5221ms)","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git stash list -z --pretty=%H|%ct|%gs (37.6436ms)","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git branch --show-current (37.6436ms)","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"postRefreshUpdate for stash took 0s","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git tag --list -n --sort=-creatordate (38.7196ms)","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git for-each-ref --sort=-committerdate --format=%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)%00%(push:track)%00%(subject)%00%(objectname)%00%(committerdate:unix) refs/heads (38.1908ms)","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"postRefreshUpdate for tags took 0s","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git -c log.showSignature=false log -g --format=+%H%x00%ct%x00%gs%x00%P (38.7196ms)","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"postRefreshUpdate for reflogCommits took 0s","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git for-each-ref --sort=-committerdate --format=%(refname) refs/remotes (38.1908ms)","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"postRefreshUpdate for remotes took 0s","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"postRefreshUpdate for remoteBranches took 0s","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git status --untracked-files=all --porcelain -z --find-renames=50%","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git rev-parse --symbolic-full-name deploy@{u}","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git rev-parse --symbolic-full-name main@{u}","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git rev-parse --symbolic-full-name master@{u}","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git symbolic-ref --short HEAD","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git fetch --all --no-write-fetch-head (54.0546ms)","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"refreshing the following scopes in sync mode: branches,commits,remotes,tags","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git tag --list -n --sort=-creatordate","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:06-04:00"}
+{"level":"debug","msg":"Error getting git config value for key: rebase.updateRefs. Error: the key is not found for [git config --get --null rebase.updateRefs]","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git rev-parse --symbolic-full-name main@{u}","level":"error","msg":"fatal: no such branch: 'main'\n","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git rev-parse --symbolic-full-name main@{u} (34.9203ms)","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git rev-parse --symbolic-full-name master@{u}","level":"error","msg":"fatal: no such branch: 'master'\n","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git rev-parse --symbolic-full-name master@{u} (35.4254ms)","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git symbolic-ref --short HEAD (35.4254ms)","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git rev-parse --symbolic-full-name deploy@{u}","level":"error","msg":"fatal: no such branch: 'deploy'\n","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git rev-parse --symbolic-full-name deploy@{u} (36.4663ms)","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git log HEAD --topo-order --oneline --pretty=format:+%H%x00%at%x00%aN%x00%ae%x00%P%x00%m%x00%D%x00%s --abbrev=40 -300 --no-show-signature -- (35.9421ms)","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git status --untracked-files=all --porcelain -z --find-renames=50% (37.4935ms)","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git rev-parse --verify --quiet refs/remotes/origin/main","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git worktree list --porcelain","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git rev-parse --verify --quiet refs/remotes/origin/deploy","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git rev-parse --verify --quiet refs/remotes/origin/master","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git tag --list -n --sort=-creatordate (30.3467ms)","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"postRefreshUpdate for tags took 0s","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"refreshed tags in 34.5276ms","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git for-each-ref --sort=-committerdate --format=%(refname) refs/remotes (31.3942ms)","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"postRefreshUpdate for remotes took 0s","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git -c log.showSignature=false log -g --format=+%H%x00%ct%x00%gs%x00%P (31.3942ms)","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"postRefreshUpdate for remoteBranches took 0s","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"refreshed remotes in 35.0543ms","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"postRefreshUpdate for reflogCommits took 0s","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"refreshed reflog in 35.0543ms","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git -C C:/Users/nicol/foo diff --no-ext-diff --submodule --unified=3 --color=never --find-renames=50% --no-index -- /dev/null bar","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git rev-parse --verify --quiet refs/remotes/origin/deploy","level":"error","msg":"","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git rev-parse --verify --quiet refs/remotes/origin/deploy (27.5317ms)","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git rev-parse --verify --quiet refs/remotes/origin/main","level":"error","msg":"","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git rev-parse --verify --quiet refs/remotes/origin/main (29.0877ms)","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git rev-parse --verify --quiet refs/remotes/origin/master","level":"error","msg":"","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git worktree list --porcelain (28.052ms)","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git rev-parse --verify --quiet refs/remotes/origin/master (27.5212ms)","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git rev-parse --verify --quiet refs/heads/deploy","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git rev-parse --verify --quiet refs/heads/main","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git rev-parse --verify --quiet refs/heads/master","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git -C C:/Users/nicol/foo rev-parse --path-format=absolute --absolute-git-dir","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git -C C:/Users/nicol/foo diff --no-ext-diff --submodule --unified=3 --color=never --find-renames=50% --no-index -- /dev/null bar","level":"error","msg":"diff --git a/bar b/bar\nnew file mode 100644\nindex 0000000..e69de29\n","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git -C C:/Users/nicol/foo diff --no-ext-diff --submodule --unified=3 --color=never --find-renames=50% --no-index -- /dev/null bar (22.8561ms)","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git -C C:/Users/nicol/foo diff --no-ext-diff --submodule --unified=3 --color=never --find-renames=50% --cached -- bar","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git -C C:/Users/nicol/foo rev-parse --path-format=absolute --absolute-git-dir (25.5788ms)","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"postRefreshUpdate for worktrees took 0s","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"postRefreshUpdate for localBranches took 0s","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git rev-parse --verify --quiet refs/heads/main","level":"error","msg":"","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git rev-parse --verify --quiet refs/heads/main (27.1747ms)","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git rev-parse --verify --quiet refs/heads/deploy","level":"error","msg":"","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git rev-parse --verify --quiet refs/heads/deploy (27.1747ms)","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git rev-parse --verify --quiet refs/heads/master","level":"error","msg":"","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git rev-parse --verify --quiet refs/heads/master (27.1747ms)","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git rev-list refs/heads/main ^main@{u}","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git -C C:/Users/nicol/foo diff --no-ext-diff --submodule --unified=3 --color=never --find-renames=50% --cached -- bar (20.753ms)","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git -C C:/Users/nicol/foo diff --no-ext-diff --submodule --unified=3 --color=always --find-renames=50% --no-index -- /dev/null bar","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git -C C:/Users/nicol/foo diff --no-ext-diff --submodule --unified=3 --color=never --find-renames=50% --no-index -- /dev/null bar","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git rev-list refs/heads/main ^main@{u} (20.4901ms)","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git rev-list refs/heads/main ^main@{u}","level":"error","msg":"fatal: ambiguous argument 'refs/heads/main': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n'git \u003ccommand\u003e [\u003crevision\u003e...] -- [\u003cfile\u003e...]'\n","time":"2025-09-20T19:55:06-04:00"}
+{"level":"debug","msg":"using cache for key rebase.updateRefs","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"postRefreshUpdate for commits took 0s","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git branch --show-current","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git -C C:/Users/nicol/foo diff --no-ext-diff --submodule --unified=3 --color=never --find-renames=50% --no-index -- /dev/null bar","level":"error","msg":"diff --git a/bar b/bar\nnew file mode 100644\nindex 0000000..e69de29\n","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git -C C:/Users/nicol/foo diff --no-ext-diff --submodule --unified=3 --color=never --find-renames=50% --no-index -- /dev/null bar (18.9207ms)","time":"2025-09-20T19:55:06-04:00"}
+{"level":"error","msg":"Unexpected error when running cmd task: exit status 1; Failed command: c:\\program files\\git\\cmd\\git.exe [git -C C:/Users/nicol/foo diff --no-ext-diff --submodule --unified=3 --color=always --find-renames=50% --no-index -- /dev/null bar]","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git -C C:/Users/nicol/foo diff --no-ext-diff --submodule --unified=3 --color=never --find-renames=50% --cached -- bar","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git branch --show-current (18.1876ms)","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git rev-list refs/heads/main ^main@{u}","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git -C C:/Users/nicol/foo diff --no-ext-diff --submodule --unified=3 --color=never --find-renames=50% --cached -- bar (18.7245ms)","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git -C C:/Users/nicol/foo diff --no-ext-diff --submodule --unified=3 --color=always --find-renames=50% --no-index -- /dev/null bar","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"postRefreshUpdate for submodules took 0s","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git -C C:/Users/nicol/foo diff --no-ext-diff --submodule --unified=3 --color=always --find-renames=50% --no-index -- /dev/null bar","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"postRefreshUpdate for files took 2.0852ms","time":"2025-09-20T19:55:06-04:00"}
+{"level":"debug","msg":"using cache for key rebase.updateRefs","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git log HEAD --topo-order --oneline --pretty=format:+%H%x00%at%x00%aN%x00%ae%x00%P%x00%m%x00%D%x00%s --abbrev=40 -300 --no-show-signature -- (25.0887ms)","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git rev-list refs/heads/main ^main@{u} (25.6083ms)","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git rev-list refs/heads/main ^main@{u}","level":"error","msg":"fatal: ambiguous argument 'refs/heads/main': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n'git \u003ccommand\u003e [\u003crevision\u003e...] -- [\u003cfile\u003e...]'\n","time":"2025-09-20T19:55:06-04:00"}
+{"level":"debug","msg":"using cache for key rebase.updateRefs","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"postRefreshUpdate for commits took 0s","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"refreshed commits and commit files in 156.0121ms","time":"2025-09-20T19:55:06-04:00"}
+{"level":"debug","msg":"using cache for key rebase.updateRefs","time":"2025-09-20T19:55:06-04:00"}
+{"level":"debug","msg":"using cache for key rebase.updateRefs","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git for-each-ref --sort=-committerdate --format=%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)%00%(push:track)%00%(subject)%00%(objectname)%00%(committerdate:unix) refs/heads","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:06-04:00"}
+{"level":"error","msg":"Unexpected error when running cmd task: exit status 1; Failed command: c:\\program files\\git\\cmd\\git.exe [git -C C:/Users/nicol/foo diff --no-ext-diff --submodule --unified=3 --color=always --find-renames=50% --no-index -- /dev/null bar]","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git for-each-ref --sort=-committerdate --format=%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)%00%(push:track)%00%(subject)%00%(objectname)%00%(committerdate:unix) refs/heads (19.7133ms)","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git symbolic-ref --short HEAD","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"git symbolic-ref --short HEAD (20.5798ms)","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"postRefreshUpdate for localBranches took 0s","time":"2025-09-20T19:55:06-04:00"}
+{"level":"debug","msg":"using cache for key rebase.updateRefs","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"refreshed branches in 202.5328ms","time":"2025-09-20T19:55:06-04:00"}
+{"level":"info","msg":"Refresh took 202.5328ms","time":"2025-09-20T19:55:06-04:00"}
+{"command":"git --version","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"git --version (19.8659ms)","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git -C C:\\Users\\nicol\\foo rev-parse --path-format=absolute --show-toplevel --absolute-git-dir --git-common-dir --is-bare-repository --show-superproject-working-tree","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"git -C C:\\Users\\nicol\\foo rev-parse --path-format=absolute --show-toplevel --absolute-git-dir --git-common-dir --is-bare-repository --show-superproject-working-tree (28.272ms)","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git -C C:\\Users\\nicol\\foo rev-parse --path-format=absolute --show-toplevel --absolute-git-dir --git-common-dir --is-bare-repository --show-superproject-working-tree","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"git -C C:\\Users\\nicol\\foo rev-parse --path-format=absolute --show-toplevel --absolute-git-dir --git-common-dir --is-bare-repository --show-superproject-working-tree (38.7268ms)","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"starting main loop","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"Updating is currently not supported for windows until we can fix permission issues","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"refreshing all scopes in async mode","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"Refresh took 0s","time":"2025-09-20T19:55:24-04:00"}
+{"command":"cmd /c title foo - Lazygit","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git fetch --all --no-write-fetch-head","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git stash list -z --pretty=%H|%ct|%gs","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git tag --list -n --sort=-creatordate","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git branch --show-current","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git for-each-ref --sort=-committerdate --format=%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)%00%(push:track)%00%(subject)%00%(objectname)%00%(committerdate:unix) refs/heads","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"cmd /c title foo - Lazygit (12.5462ms)","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"git stash list -z --pretty=%H|%ct|%gs (37.6574ms)","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"postRefreshUpdate for stash took 0s","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"git for-each-ref --sort=-committerdate --format=%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)%00%(push:track)%00%(subject)%00%(objectname)%00%(committerdate:unix) refs/heads (38.7671ms)","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"git tag --list -n --sort=-creatordate (39.8223ms)","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"postRefreshUpdate for tags took 0s","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"git -c log.showSignature=false log -g --format=+%H%x00%ct%x00%gs%x00%P (39.8223ms)","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"postRefreshUpdate for reflogCommits took 0s","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"git for-each-ref --sort=-committerdate --format=%(refname) refs/remotes (39.2976ms)","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"git branch --show-current (39.2976ms)","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"postRefreshUpdate for remotes took 0s","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"postRefreshUpdate for remoteBranches took 0s","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git symbolic-ref --short HEAD","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git status --untracked-files=all --porcelain -z --find-renames=50%","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git rev-parse --symbolic-full-name main@{u}","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git rev-parse --symbolic-full-name master@{u}","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git rev-parse --symbolic-full-name deploy@{u}","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"git fetch --all --no-write-fetch-head (53.979ms)","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"refreshing the following scopes in sync mode: branches,commits,remotes,tags","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git tag --list -n --sort=-creatordate","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:24-04:00"}
+{"level":"debug","msg":"Error getting git config value for key: rebase.updateRefs. Error: the key is not found for [git config --get --null rebase.updateRefs]","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git rev-parse --symbolic-full-name master@{u}","level":"error","msg":"fatal: no such branch: 'master'\n","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"git rev-parse --symbolic-full-name master@{u} (37.4702ms)","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git rev-parse --symbolic-full-name main@{u}","level":"error","msg":"fatal: no such branch: 'main'\n","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"git rev-parse --symbolic-full-name main@{u} (38.5139ms)","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git rev-parse --symbolic-full-name deploy@{u}","level":"error","msg":"fatal: no such branch: 'deploy'\n","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"git rev-parse --symbolic-full-name deploy@{u} (38.5231ms)","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"git log HEAD --topo-order --oneline --pretty=format:+%H%x00%at%x00%aN%x00%ae%x00%P%x00%m%x00%D%x00%s --abbrev=40 -300 --no-show-signature -- (39.041ms)","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"git symbolic-ref --short HEAD (40.0796ms)","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"git status --untracked-files=all --porcelain -z --find-renames=50% (41.7128ms)","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git rev-parse --verify --quiet refs/remotes/origin/master","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git rev-parse --verify --quiet refs/remotes/origin/main","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git rev-parse --verify --quiet refs/remotes/origin/deploy","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git worktree list --porcelain","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"git for-each-ref --sort=-committerdate --format=%(refname) refs/remotes (32.8457ms)","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"postRefreshUpdate for remotes took 0s","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"postRefreshUpdate for remoteBranches took 0s","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"refreshed remotes in 38.9846ms","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"git -c log.showSignature=false log -g --format=+%H%x00%ct%x00%gs%x00%P (33.3587ms)","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"postRefreshUpdate for reflogCommits took 0s","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"refreshed reflog in 38.9846ms","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"postRefreshUpdate for submodules took 0s","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"git tag --list -n --sort=-creatordate (34.4074ms)","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"postRefreshUpdate for tags took 0s","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"refreshed tags in 40.0333ms","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git -C C:/Users/nicol/foo diff --no-ext-diff --submodule --unified=3 --color=always --find-renames=50% --no-index -- /dev/null bar","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"postRefreshUpdate for files took 3.6785ms","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git rev-parse --verify --quiet refs/remotes/origin/master","level":"error","msg":"","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"git rev-parse --verify --quiet refs/remotes/origin/master (32.4507ms)","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git rev-parse --verify --quiet refs/remotes/origin/main","level":"error","msg":"","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"git worktree list --porcelain (30.3205ms)","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"git rev-parse --verify --quiet refs/remotes/origin/main (31.3739ms)","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git rev-parse --verify --quiet refs/remotes/origin/deploy","level":"error","msg":"","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"git rev-parse --verify --quiet refs/remotes/origin/deploy (30.85ms)","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git rev-parse --verify --quiet refs/heads/master","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git rev-parse --verify --quiet refs/heads/deploy","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git rev-parse --verify --quiet refs/heads/main","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git -C C:/Users/nicol/foo rev-parse --path-format=absolute --absolute-git-dir","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:24-04:00"}
+{"level":"error","msg":"Unexpected error when running cmd task: exit status 1; Failed command: c:\\program files\\git\\cmd\\git.exe [git -C C:/Users/nicol/foo diff --no-ext-diff --submodule --unified=3 --color=always --find-renames=50% --no-index -- /dev/null bar]","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git rev-parse --verify --quiet refs/heads/deploy","level":"error","msg":"","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"git rev-parse --verify --quiet refs/heads/deploy (35.1145ms)","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git rev-parse --verify --quiet refs/heads/main","level":"error","msg":"","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"git rev-parse --verify --quiet refs/heads/main (34.6081ms)","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git rev-parse --verify --quiet refs/heads/master","level":"error","msg":"","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"git rev-parse --verify --quiet refs/heads/master (35.1145ms)","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"git -C C:/Users/nicol/foo rev-parse --path-format=absolute --absolute-git-dir (34.6081ms)","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"postRefreshUpdate for worktrees took 0s","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"postRefreshUpdate for localBranches took 0s","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git rev-list refs/heads/main ^main@{u}","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"git rev-list refs/heads/main ^main@{u} (23.6773ms)","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git rev-list refs/heads/main ^main@{u}","level":"error","msg":"fatal: ambiguous argument 'refs/heads/main': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n'git \u003ccommand\u003e [\u003crevision\u003e...] -- [\u003cfile\u003e...]'\n","time":"2025-09-20T19:55:24-04:00"}
+{"level":"debug","msg":"using cache for key rebase.updateRefs","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"postRefreshUpdate for commits took 0s","time":"2025-09-20T19:55:24-04:00"}
+{"level":"debug","msg":"using cache for key rebase.updateRefs","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git branch --show-current","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"git branch --show-current (23.1799ms)","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git rev-list refs/heads/main ^main@{u}","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"git log HEAD --topo-order --oneline --pretty=format:+%H%x00%at%x00%aN%x00%ae%x00%P%x00%m%x00%D%x00%s --abbrev=40 -300 --no-show-signature -- (22.5541ms)","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"git rev-list refs/heads/main ^main@{u} (22.0424ms)","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git rev-list refs/heads/main ^main@{u}","level":"error","msg":"fatal: ambiguous argument 'refs/heads/main': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n'git \u003ccommand\u003e [\u003crevision\u003e...] -- [\u003cfile\u003e...]'\n","time":"2025-09-20T19:55:24-04:00"}
+{"level":"debug","msg":"using cache for key rebase.updateRefs","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"postRefreshUpdate for commits took 0s","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"refreshed commits and commit files in 180.1163ms","time":"2025-09-20T19:55:24-04:00"}
+{"level":"debug","msg":"using cache for key rebase.updateRefs","time":"2025-09-20T19:55:24-04:00"}
+{"level":"debug","msg":"using cache for key rebase.updateRefs","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git for-each-ref --sort=-committerdate --format=%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)%00%(push:track)%00%(subject)%00%(objectname)%00%(committerdate:unix) refs/heads","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"git for-each-ref --sort=-committerdate --format=%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)%00%(push:track)%00%(subject)%00%(objectname)%00%(committerdate:unix) refs/heads (20.3348ms)","time":"2025-09-20T19:55:24-04:00"}
+{"command":"git symbolic-ref --short HEAD","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"git symbolic-ref --short HEAD (22.3778ms)","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"postRefreshUpdate for localBranches took 0s","time":"2025-09-20T19:55:24-04:00"}
+{"level":"debug","msg":"using cache for key rebase.updateRefs","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"refreshed branches in 228.4987ms","time":"2025-09-20T19:55:24-04:00"}
+{"level":"info","msg":"Refresh took 229.09ms","time":"2025-09-20T19:55:24-04:00"}
+{"command":"cmd /c if ^%NVIM^%==^%NVIM^% (nvim -- C:\\Users\\nicol\\foo\\bar) else (nvim --server ^%NVIM^% --remote-send qa ^\u0026 nvim --server ^%NVIM^% --remote-tab C:\\Users\\nicol\\foo\\bar)","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:25-04:00"}
+{"level":"info","msg":"Heap memory in use: 3.3 MB","time":"2025-09-20T19:55:34-04:00"}
+{"level":"info","msg":"refreshing the following scopes in sync mode: files","time":"2025-09-20T19:55:34-04:00"}
+{"level":"info","msg":"refreshed merge conflicts in 0s","time":"2025-09-20T19:55:34-04:00"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2025-09-20T19:55:34-04:00"}
+{"command":"git status --untracked-files=all --porcelain -z --find-renames=50%","level":"debug","msg":"RunCommand","time":"2025-09-20T19:55:34-04:00"}
+{"level":"info","msg":"Heap memory in use: 3.4 MB","time":"2025-09-20T19:55:44-04:00"}
+{"command":"git --version","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:18-04:00"}
+{"level":"info","msg":"git --version (22.5054ms)","time":"2025-09-20T20:01:18-04:00"}
+{"command":"git -C C:\\Users\\nicol\\foo rev-parse --path-format=absolute --show-toplevel --absolute-git-dir --git-common-dir --is-bare-repository --show-superproject-working-tree","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:18-04:00"}
+{"level":"info","msg":"git -C C:\\Users\\nicol\\foo rev-parse --path-format=absolute --show-toplevel --absolute-git-dir --git-common-dir --is-bare-repository --show-superproject-working-tree (30.7962ms)","time":"2025-09-20T20:01:18-04:00"}
+{"command":"git -C C:\\Users\\nicol\\foo rev-parse --path-format=absolute --show-toplevel --absolute-git-dir --git-common-dir --is-bare-repository --show-superproject-working-tree","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:18-04:00"}
+{"level":"info","msg":"git -C C:\\Users\\nicol\\foo rev-parse --path-format=absolute --show-toplevel --absolute-git-dir --git-common-dir --is-bare-repository --show-superproject-working-tree (37.1843ms)","time":"2025-09-20T20:01:18-04:00"}
+{"level":"info","msg":"starting main loop","time":"2025-09-20T20:01:18-04:00"}
+{"level":"info","msg":"Updating is currently not supported for windows until we can fix permission issues","time":"2025-09-20T20:01:18-04:00"}
+{"level":"info","msg":"refreshing all scopes in async mode","time":"2025-09-20T20:01:18-04:00"}
+{"level":"info","msg":"Refresh took 0s","time":"2025-09-20T20:01:18-04:00"}
+{"command":"cmd /c title foo - Lazygit","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:18-04:00"}
+{"command":"git fetch --all --no-write-fetch-head","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:18-04:00"}
+{"command":"git branch --show-current","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:18-04:00"}
+{"command":"git tag --list -n --sort=-creatordate","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:18-04:00"}
+{"command":"git for-each-ref --sort=-committerdate --format=%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)%00%(push:track)%00%(subject)%00%(objectname)%00%(committerdate:unix) refs/heads","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:18-04:00"}
+{"command":"git stash list -z --pretty=%H|%ct|%gs","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:18-04:00"}
+{"level":"info","msg":"cmd /c title foo - Lazygit (12.8318ms)","time":"2025-09-20T20:01:18-04:00"}
+{"level":"info","msg":"git stash list -z --pretty=%H|%ct|%gs (41.2306ms)","time":"2025-09-20T20:01:18-04:00"}
+{"level":"info","msg":"postRefreshUpdate for stash took 0s","time":"2025-09-20T20:01:18-04:00"}
+{"level":"info","msg":"git for-each-ref --sort=-committerdate --format=%(refname) refs/remotes (41.7675ms)","time":"2025-09-20T20:01:18-04:00"}
+{"level":"info","msg":"git -c log.showSignature=false log -g --format=+%H%x00%ct%x00%gs%x00%P (42.3025ms)","time":"2025-09-20T20:01:18-04:00"}
+{"level":"info","msg":"git branch --show-current (42.3025ms)","time":"2025-09-20T20:01:18-04:00"}
+{"level":"info","msg":"postRefreshUpdate for remotes took 0s","time":"2025-09-20T20:01:18-04:00"}
+{"level":"info","msg":"postRefreshUpdate for reflogCommits took 0s","time":"2025-09-20T20:01:18-04:00"}
+{"level":"info","msg":"postRefreshUpdate for remoteBranches took 0s","time":"2025-09-20T20:01:18-04:00"}
+{"level":"info","msg":"git for-each-ref --sort=-committerdate --format=%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)%00%(push:track)%00%(subject)%00%(objectname)%00%(committerdate:unix) refs/heads (42.3025ms)","time":"2025-09-20T20:01:18-04:00"}
+{"level":"info","msg":"git tag --list -n --sort=-creatordate (42.816ms)","time":"2025-09-20T20:01:18-04:00"}
+{"level":"info","msg":"postRefreshUpdate for tags took 0s","time":"2025-09-20T20:01:18-04:00"}
+{"command":"git symbolic-ref --short HEAD","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:18-04:00"}
+{"command":"git rev-parse --symbolic-full-name main@{u}","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:18-04:00"}
+{"command":"git status --untracked-files=all --porcelain -z --find-renames=50%","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:18-04:00"}
+{"command":"git rev-parse --symbolic-full-name deploy@{u}","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:18-04:00"}
+{"command":"git rev-parse --symbolic-full-name master@{u}","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:18-04:00"}
+{"level":"info","msg":"git fetch --all --no-write-fetch-head (56.921ms)","time":"2025-09-20T20:01:18-04:00"}
+{"level":"info","msg":"refreshing the following scopes in sync mode: branches,commits,remotes,tags","time":"2025-09-20T20:01:18-04:00"}
+{"command":"git tag --list -n --sort=-creatordate","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:19-04:00"}
+{"command":"git rev-parse --symbolic-full-name deploy@{u}","level":"error","msg":"fatal: no such branch: 'deploy'\n","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"git rev-parse --symbolic-full-name deploy@{u} (38.161ms)","time":"2025-09-20T20:01:19-04:00"}
+{"command":"git rev-parse --symbolic-full-name master@{u}","level":"error","msg":"fatal: no such branch: 'master'\n","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"git rev-parse --symbolic-full-name master@{u} (37.0885ms)","time":"2025-09-20T20:01:19-04:00"}
+{"command":"git rev-parse --symbolic-full-name main@{u}","level":"error","msg":"fatal: no such branch: 'main'\n","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"git rev-parse --symbolic-full-name main@{u} (38.161ms)","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"git status --untracked-files=all --porcelain -z --find-renames=50% (38.161ms)","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"git log HEAD --topo-order --oneline --pretty=format:+%H%x00%at%x00%aN%x00%ae%x00%P%x00%m%x00%D%x00%s --abbrev=40 -300 --no-show-signature -- (38.161ms)","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"git symbolic-ref --short HEAD (38.161ms)","time":"2025-09-20T20:01:19-04:00"}
+{"level":"debug","msg":"Error getting git config value for key: rebase.updateRefs. Error: the key is not found for [git config --get --null rebase.updateRefs]","time":"2025-09-20T20:01:19-04:00"}
+{"command":"git rev-parse --verify --quiet refs/remotes/origin/master","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:19-04:00"}
+{"command":"git worktree list --porcelain","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:19-04:00"}
+{"command":"git rev-parse --verify --quiet refs/remotes/origin/deploy","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:19-04:00"}
+{"command":"git rev-parse --verify --quiet refs/remotes/origin/main","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"git -c log.showSignature=false log -g --format=+%H%x00%ct%x00%gs%x00%P (29.3263ms)","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"postRefreshUpdate for reflogCommits took 0s","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"refreshed reflog in 33.648ms","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"git tag --list -n --sort=-creatordate (31.5305ms)","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"git for-each-ref --sort=-committerdate --format=%(refname) refs/remotes (30.988ms)","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"postRefreshUpdate for tags took 0s","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"postRefreshUpdate for remotes took 0s","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"refreshed tags in 35.2913ms","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"postRefreshUpdate for remoteBranches took 0s","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"refreshed remotes in 35.2913ms","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"postRefreshUpdate for submodules took 0s","time":"2025-09-20T20:01:19-04:00"}
+{"command":"git -C C:/Users/nicol/foo diff --no-ext-diff --submodule --unified=3 --color=always --find-renames=50% --no-index -- /dev/null bar","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"postRefreshUpdate for files took 2.6022ms","time":"2025-09-20T20:01:19-04:00"}
+{"command":"git rev-parse --verify --quiet refs/remotes/origin/master","level":"error","msg":"","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"git rev-parse --verify --quiet refs/remotes/origin/master (33.7981ms)","time":"2025-09-20T20:01:19-04:00"}
+{"command":"git rev-parse --verify --quiet refs/remotes/origin/deploy","level":"error","msg":"","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"git rev-parse --verify --quiet refs/remotes/origin/deploy (33.2774ms)","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"git worktree list --porcelain (33.7843ms)","time":"2025-09-20T20:01:19-04:00"}
+{"command":"git rev-parse --verify --quiet refs/remotes/origin/main","level":"error","msg":"","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"git rev-parse --verify --quiet refs/remotes/origin/main (33.7843ms)","time":"2025-09-20T20:01:19-04:00"}
+{"command":"git rev-parse --verify --quiet refs/heads/deploy","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:19-04:00"}
+{"command":"git rev-parse --verify --quiet refs/heads/master","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:19-04:00"}
+{"command":"git -C C:/Users/nicol/foo rev-parse --path-format=absolute --absolute-git-dir","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:19-04:00"}
+{"command":"git rev-parse --verify --quiet refs/heads/main","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:19-04:00"}
+{"level":"error","msg":"Unexpected error when running cmd task: exit status 1; Failed command: c:\\program files\\git\\cmd\\git.exe [git -C C:/Users/nicol/foo diff --no-ext-diff --submodule --unified=3 --color=always --find-renames=50% --no-index -- /dev/null bar]","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"git -C C:/Users/nicol/foo rev-parse --path-format=absolute --absolute-git-dir (28.249ms)","time":"2025-09-20T20:01:19-04:00"}
+{"command":"git rev-parse --verify --quiet refs/heads/master","level":"error","msg":"","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"git rev-parse --verify --quiet refs/heads/master (28.8161ms)","time":"2025-09-20T20:01:19-04:00"}
+{"command":"git rev-parse --verify --quiet refs/heads/deploy","level":"error","msg":"","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"git rev-parse --verify --quiet refs/heads/deploy (28.8161ms)","time":"2025-09-20T20:01:19-04:00"}
+{"command":"git rev-parse --verify --quiet refs/heads/main","level":"error","msg":"","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"git rev-parse --verify --quiet refs/heads/main (28.249ms)","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"postRefreshUpdate for worktrees took 0s","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"postRefreshUpdate for localBranches took 0s","time":"2025-09-20T20:01:19-04:00"}
+{"command":"git rev-list refs/heads/main ^main@{u}","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"git rev-list refs/heads/main ^main@{u} (21.3898ms)","time":"2025-09-20T20:01:19-04:00"}
+{"command":"git rev-list refs/heads/main ^main@{u}","level":"error","msg":"fatal: ambiguous argument 'refs/heads/main': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n'git \u003ccommand\u003e [\u003crevision\u003e...] -- [\u003cfile\u003e...]'\n","time":"2025-09-20T20:01:19-04:00"}
+{"level":"debug","msg":"using cache for key rebase.updateRefs","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"postRefreshUpdate for commits took 0s","time":"2025-09-20T20:01:19-04:00"}
+{"level":"debug","msg":"using cache for key rebase.updateRefs","time":"2025-09-20T20:01:19-04:00"}
+{"command":"git branch --show-current","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"git branch --show-current (19.084ms)","time":"2025-09-20T20:01:19-04:00"}
+{"command":"git rev-list refs/heads/main ^main@{u}","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"git rev-list refs/heads/main ^main@{u} (20.7826ms)","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"git log HEAD --topo-order --oneline --pretty=format:+%H%x00%at%x00%aN%x00%ae%x00%P%x00%m%x00%D%x00%s --abbrev=40 -300 --no-show-signature -- (21.2965ms)","time":"2025-09-20T20:01:19-04:00"}
+{"command":"git rev-list refs/heads/main ^main@{u}","level":"error","msg":"fatal: ambiguous argument 'refs/heads/main': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n'git \u003ccommand\u003e [\u003crevision\u003e...] -- [\u003cfile\u003e...]'\n","time":"2025-09-20T20:01:19-04:00"}
+{"level":"debug","msg":"using cache for key rebase.updateRefs","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"postRefreshUpdate for commits took 0s","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"refreshed commits and commit files in 162.6211ms","time":"2025-09-20T20:01:19-04:00"}
+{"level":"debug","msg":"using cache for key rebase.updateRefs","time":"2025-09-20T20:01:19-04:00"}
+{"level":"debug","msg":"using cache for key rebase.updateRefs","time":"2025-09-20T20:01:19-04:00"}
+{"command":"git for-each-ref --sort=-committerdate --format=%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)%00%(push:track)%00%(subject)%00%(objectname)%00%(committerdate:unix) refs/heads","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"git for-each-ref --sort=-committerdate --format=%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)%00%(push:track)%00%(subject)%00%(objectname)%00%(committerdate:unix) refs/heads (19.447ms)","time":"2025-09-20T20:01:19-04:00"}
+{"command":"git symbolic-ref --short HEAD","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"git symbolic-ref --short HEAD (20.4681ms)","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"postRefreshUpdate for localBranches took 0s","time":"2025-09-20T20:01:19-04:00"}
+{"level":"debug","msg":"using cache for key rebase.updateRefs","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"refreshed branches in 208.2309ms","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"Refresh took 208.2309ms","time":"2025-09-20T20:01:19-04:00"}
+{"level":"info","msg":"refreshing all scopes in async mode","time":"2025-09-20T20:01:20-04:00"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2025-09-20T20:01:20-04:00"}
+{"level":"info","msg":"Refresh took 513.9µs","time":"2025-09-20T20:01:20-04:00"}
+{"command":"git branch --show-current","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:20-04:00"}
+{"command":"git for-each-ref --sort=-committerdate --format=%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)%00%(push:track)%00%(subject)%00%(objectname)%00%(committerdate:unix) refs/heads","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:20-04:00"}
+{"command":"git stash list -z --pretty=%H|%ct|%gs","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:20-04:00"}
+{"command":"git status --untracked-files=all --porcelain -z --find-renames=50%","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:20-04:00"}
+{"command":"git tag --list -n --sort=-creatordate","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:20-04:00"}
+{"level":"info","msg":"git for-each-ref --sort=-committerdate --format=%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)%00%(push:track)%00%(subject)%00%(objectname)%00%(committerdate:unix) refs/heads (34.359ms)","time":"2025-09-20T20:01:20-04:00"}
+{"level":"info","msg":"git for-each-ref --sort=-committerdate --format=%(refname) refs/remotes (33.3064ms)","time":"2025-09-20T20:01:20-04:00"}
+{"level":"info","msg":"git branch --show-current (34.9269ms)","time":"2025-09-20T20:01:20-04:00"}
+{"level":"info","msg":"postRefreshUpdate for remotes took 0s","time":"2025-09-20T20:01:20-04:00"}
+{"level":"info","msg":"postRefreshUpdate for remoteBranches took 0s","time":"2025-09-20T20:01:20-04:00"}
+{"level":"info","msg":"git status --untracked-files=all --porcelain -z --find-renames=50% (35.4208ms)","time":"2025-09-20T20:01:20-04:00"}
+{"level":"info","msg":"git stash list -z --pretty=%H|%ct|%gs (35.4208ms)","time":"2025-09-20T20:01:20-04:00"}
+{"level":"info","msg":"git -c log.showSignature=false log -g --format=+%H%x00%ct%x00%gs%x00%P (35.4208ms)","time":"2025-09-20T20:01:20-04:00"}
+{"level":"info","msg":"postRefreshUpdate for stash took 0s","time":"2025-09-20T20:01:20-04:00"}
+{"level":"info","msg":"git tag --list -n --sort=-creatordate (35.4208ms)","time":"2025-09-20T20:01:20-04:00"}
+{"level":"info","msg":"postRefreshUpdate for reflogCommits took 0s","time":"2025-09-20T20:01:20-04:00"}
+{"level":"info","msg":"postRefreshUpdate for tags took 0s","time":"2025-09-20T20:01:20-04:00"}
+{"command":"git symbolic-ref --short HEAD","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:20-04:00"}
+{"command":"git rev-list refs/heads/main ^main@{u}","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:20-04:00"}
+{"level":"info","msg":"postRefreshUpdate for submodules took 0s","time":"2025-09-20T20:01:20-04:00"}
+{"command":"git -C C:/Users/nicol/foo diff --no-ext-diff --submodule --unified=3 --color=always --find-renames=50% --no-index -- /dev/null bar","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:20-04:00"}
+{"level":"info","msg":"postRefreshUpdate for files took 2.6015ms","time":"2025-09-20T20:01:20-04:00"}
+{"level":"info","msg":"git symbolic-ref --short HEAD (25.7961ms)","time":"2025-09-20T20:01:20-04:00"}
+{"level":"info","msg":"git rev-list refs/heads/main ^main@{u} (25.7961ms)","time":"2025-09-20T20:01:20-04:00"}
+{"level":"info","msg":"git log HEAD --topo-order --oneline --pretty=format:+%H%x00%at%x00%aN%x00%ae%x00%P%x00%m%x00%D%x00%s --abbrev=40 -300 --no-show-signature -- (25.2831ms)","time":"2025-09-20T20:01:20-04:00"}
+{"command":"git rev-list refs/heads/main ^main@{u}","level":"error","msg":"fatal: ambiguous argument 'refs/heads/main': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n'git \u003ccommand\u003e [\u003crevision\u003e...] -- [\u003cfile\u003e...]'\n","time":"2025-09-20T20:01:20-04:00"}
+{"level":"debug","msg":"using cache for key rebase.updateRefs","time":"2025-09-20T20:01:20-04:00"}
+{"level":"info","msg":"postRefreshUpdate for commits took 0s","time":"2025-09-20T20:01:20-04:00"}
+{"level":"error","msg":"Unexpected error when running cmd task: exit status 1; Failed command: c:\\program files\\git\\cmd\\git.exe [git -C C:/Users/nicol/foo diff --no-ext-diff --submodule --unified=3 --color=always --find-renames=50% --no-index -- /dev/null bar]","time":"2025-09-20T20:01:20-04:00"}
+{"level":"debug","msg":"using cache for key rebase.updateRefs","time":"2025-09-20T20:01:20-04:00"}
+{"command":"git worktree list --porcelain","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:20-04:00"}
+{"level":"info","msg":"git worktree list --porcelain (21.4818ms)","time":"2025-09-20T20:01:20-04:00"}
+{"command":"git -C C:/Users/nicol/foo rev-parse --path-format=absolute --absolute-git-dir","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:20-04:00"}
+{"level":"info","msg":"git -C C:/Users/nicol/foo rev-parse --path-format=absolute --absolute-git-dir (19.1129ms)","time":"2025-09-20T20:01:20-04:00"}
+{"level":"info","msg":"postRefreshUpdate for worktrees took 0s","time":"2025-09-20T20:01:20-04:00"}
+{"level":"info","msg":"postRefreshUpdate for localBranches took 0s","time":"2025-09-20T20:01:20-04:00"}
+{"level":"debug","msg":"using cache for key rebase.updateRefs","time":"2025-09-20T20:01:20-04:00"}
+{"level":"info","msg":"Heap memory in use: 2.3 MB","time":"2025-09-20T20:01:28-04:00"}
+{"level":"info","msg":"refreshing the following scopes in sync mode: files","time":"2025-09-20T20:01:28-04:00"}
+{"level":"info","msg":"refreshed merge conflicts in 0s","time":"2025-09-20T20:01:28-04:00"}
+{"level":"debug","msg":"using cache for key status.showUntrackedFiles","time":"2025-09-20T20:01:28-04:00"}
+{"command":"git status --untracked-files=all --porcelain -z --find-renames=50%","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:28-04:00"}
+{"level":"info","msg":"git status --untracked-files=all --porcelain -z --find-renames=50% (21.2034ms)","time":"2025-09-20T20:01:28-04:00"}
+{"level":"info","msg":"refreshed files in 23.9084ms","time":"2025-09-20T20:01:28-04:00"}
+{"level":"info","msg":"Refresh took 24.1248ms","time":"2025-09-20T20:01:28-04:00"}
+{"level":"info","msg":"postRefreshUpdate for submodules took 0s","time":"2025-09-20T20:01:28-04:00"}
+{"command":"git -C C:/Users/nicol/foo diff --no-ext-diff --submodule --unified=3 --color=always --find-renames=50% --no-index -- /dev/null bar","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:28-04:00"}
+{"level":"info","msg":"postRefreshUpdate for files took 2.969ms","time":"2025-09-20T20:01:28-04:00"}
+{"level":"error","msg":"Unexpected error when running cmd task: exit status 1; Failed command: c:\\program files\\git\\cmd\\git.exe [git -C C:/Users/nicol/foo diff --no-ext-diff --submodule --unified=3 --color=always --find-renames=50% --no-index -- /dev/null bar]","time":"2025-09-20T20:01:28-04:00"}
+{"level":"info","msg":"Receiving focus - refreshing","time":"2025-09-20T20:01:32-04:00"}
+{"level":"info","msg":"refreshing all scopes in async mode","time":"2025-09-20T20:01:32-04:00"}
+{"level":"info","msg":"Refresh took 512.4µs","time":"2025-09-20T20:01:32-04:00"}
+{"command":"git stash list -z --pretty=%H|%ct|%gs","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:32-04:00"}
+{"command":"git branch --show-current","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:32-04:00"}
+{"command":"git for-each-ref --sort=-committerdate --format=%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)%00%(push:track)%00%(subject)%00%(objectname)%00%(committerdate:unix) refs/heads","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:32-04:00"}
+{"command":"git tag --list -n --sort=-creatordate","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:32-04:00"}
+{"level":"info","msg":"git for-each-ref --sort=-committerdate --format=%(HEAD)%00%(refname:short)%00%(upstream:short)%00%(upstream:track)%00%(push:track)%00%(subject)%00%(objectname)%00%(committerdate:unix) refs/heads (38.5965ms)","time":"2025-09-20T20:01:32-04:00"}
+{"level":"info","msg":"git branch --show-current (39.1292ms)","time":"2025-09-20T20:01:32-04:00"}
+{"level":"info","msg":"git tag --list -n --sort=-creatordate (39.185ms)","time":"2025-09-20T20:01:32-04:00"}
+{"level":"info","msg":"git stash list -z --pretty=%H|%ct|%gs (39.7177ms)","time":"2025-09-20T20:01:32-04:00"}
+{"level":"info","msg":"git for-each-ref --sort=-committerdate --format=%(refname) refs/remotes (39.7177ms)","time":"2025-09-20T20:01:32-04:00"}
+{"level":"info","msg":"postRefreshUpdate for tags took 0s","time":"2025-09-20T20:01:32-04:00"}
+{"level":"info","msg":"postRefreshUpdate for stash took 0s","time":"2025-09-20T20:01:32-04:00"}
+{"level":"info","msg":"git -c log.showSignature=false log -g --format=+%H%x00%ct%x00%gs%x00%P (39.7177ms)","time":"2025-09-20T20:01:32-04:00"}
+{"level":"info","msg":"postRefreshUpdate for remotes took 0s","time":"2025-09-20T20:01:32-04:00"}
+{"level":"info","msg":"postRefreshUpdate for reflogCommits took 0s","time":"2025-09-20T20:01:32-04:00"}
+{"level":"info","msg":"postRefreshUpdate for remoteBranches took 0s","time":"2025-09-20T20:01:32-04:00"}
+{"command":"git status --untracked-files=all --porcelain -z --find-renames=50%","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:32-04:00"}
+{"command":"git symbolic-ref --short HEAD","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:32-04:00"}
+{"command":"git rev-list refs/heads/main ^main@{u}","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:32-04:00"}
+{"level":"info","msg":"git status --untracked-files=all --porcelain -z --find-renames=50% (28.4031ms)","time":"2025-09-20T20:01:32-04:00"}
+{"level":"info","msg":"git log HEAD --topo-order --oneline --pretty=format:+%H%x00%at%x00%aN%x00%ae%x00%P%x00%m%x00%D%x00%s --abbrev=40 -300 --no-show-signature -- (27.3696ms)","time":"2025-09-20T20:01:32-04:00"}
+{"level":"info","msg":"git rev-list refs/heads/main ^main@{u} (27.3696ms)","time":"2025-09-20T20:01:32-04:00"}
+{"level":"info","msg":"git symbolic-ref --short HEAD (27.3696ms)","time":"2025-09-20T20:01:32-04:00"}
+{"command":"git rev-list refs/heads/main ^main@{u}","level":"error","msg":"fatal: ambiguous argument 'refs/heads/main': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n'git \u003ccommand\u003e [\u003crevision\u003e...] -- [\u003cfile\u003e...]'\n","time":"2025-09-20T20:01:32-04:00"}
+{"level":"info","msg":"postRefreshUpdate for submodules took 0s","time":"2025-09-20T20:01:32-04:00"}
+{"command":"git worktree list --porcelain","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:32-04:00"}
+{"command":"git -C C:/Users/nicol/foo diff --no-ext-diff --submodule --unified=3 --color=always --find-renames=50% --no-index -- /dev/null bar","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:32-04:00"}
+{"level":"info","msg":"postRefreshUpdate for files took 2.6554ms","time":"2025-09-20T20:01:32-04:00"}
+{"level":"error","msg":"Unexpected error when running cmd task: exit status 1; Failed command: c:\\program files\\git\\cmd\\git.exe [git -C C:/Users/nicol/foo diff --no-ext-diff --submodule --unified=3 --color=always --find-renames=50% --no-index -- /dev/null bar]","time":"2025-09-20T20:01:32-04:00"}
+{"level":"info","msg":"git worktree list --porcelain (23.7218ms)","time":"2025-09-20T20:01:32-04:00"}
+{"level":"debug","msg":"Error getting git config value for key: rebase.updateRefs. Error: the key is not found for [git config --get --null rebase.updateRefs]","time":"2025-09-20T20:01:32-04:00"}
+{"level":"info","msg":"postRefreshUpdate for commits took 26.8987ms","time":"2025-09-20T20:01:32-04:00"}
+{"command":"git -C C:/Users/nicol/foo rev-parse --path-format=absolute --absolute-git-dir","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:32-04:00"}
+{"level":"debug","msg":"using cache for key rebase.updateRefs","time":"2025-09-20T20:01:32-04:00"}
+{"level":"info","msg":"git -C C:/Users/nicol/foo rev-parse --path-format=absolute --absolute-git-dir (19.101ms)","time":"2025-09-20T20:01:32-04:00"}
+{"level":"info","msg":"postRefreshUpdate for worktrees took 0s","time":"2025-09-20T20:01:32-04:00"}
+{"level":"info","msg":"postRefreshUpdate for localBranches took 0s","time":"2025-09-20T20:01:32-04:00"}
+{"level":"debug","msg":"using cache for key rebase.updateRefs","time":"2025-09-20T20:01:32-04:00"}
+{"command":"git log --graph --color=always --abbrev-commit --decorate --date=relative --pretty=medium refs/heads/main --","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:35-04:00"}
+{"level":"error","msg":"Unexpected error when running cmd task: exit status 128; Failed command: c:\\program files\\git\\cmd\\git.exe [git log --graph --color=always --abbrev-commit --decorate --date=relative --pretty=medium refs/heads/main --]","time":"2025-09-20T20:01:35-04:00"}
+{"level":"debug","msg":"using cache for key rebase.updateRefs","time":"2025-09-20T20:01:35-04:00"}
+{"level":"debug","msg":"using cache for key rebase.updateRefs","time":"2025-09-20T20:01:35-04:00"}
+{"level":"debug","msg":"using cache for key rebase.updateRefs","time":"2025-09-20T20:01:36-04:00"}
+{"command":"git log --graph --color=always --abbrev-commit --decorate --date=relative --pretty=medium refs/heads/main --","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:36-04:00"}
+{"level":"debug","msg":"using cache for key rebase.updateRefs","time":"2025-09-20T20:01:36-04:00"}
+{"level":"error","msg":"Unexpected error when running cmd task: exit status 128; Failed command: c:\\program files\\git\\cmd\\git.exe [git log --graph --color=always --abbrev-commit --decorate --date=relative --pretty=medium refs/heads/main --]","time":"2025-09-20T20:01:36-04:00"}
+{"command":"git -C C:/Users/nicol/foo diff --no-ext-diff --submodule --unified=3 --color=always --find-renames=50% --no-index -- /dev/null bar","level":"debug","msg":"RunCommand","time":"2025-09-20T20:01:36-04:00"}
+{"level":"error","msg":"Unexpected error when running cmd task: exit status 1; Failed command: c:\\program files\\git\\cmd\\git.exe [git -C C:/Users/nicol/foo diff --no-ext-diff --submodule --unified=3 --color=always --find-renames=50% --no-index -- /dev/null bar]","time":"2025-09-20T20:01:36-04:00"}
