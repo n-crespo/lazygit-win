@@ -60,7 +60,8 @@ gui:
 git:
   paging:
     colorArg: always
-    pager: "delta --paging=never --syntax-theme=gruvbox-dark"
+    externalDiffCommand: "C:/Users/nicol/AppData/Local/lazygit/delta-diff.ps1"
+    # pager: "delta --paging=never --syntax-theme=gruvbox-dark"
   commit:
     signOff: false
     autoWrapCommitMessage: true # automatic WYSIWYG wrapping of the commit message as you type
@@ -99,12 +100,6 @@ git:
 os:
   copyToClipboardCmd: "" # See 'Custom Command for Copying to Clipboard' section
   editPreset: "nvim" # see 'Configuring File Editing' section
-  # edit: 'if "%NVIM%"=="%NVIM%" (nvim -- "{{filename}}") else (nvim --server %NVIM% --remote-send "qa" \& nvim --server %NVIM% --remote-tab "{{filename}}")'
-  # edit: 'if %NVIM%=="%NVIM%" (nvim -- "blahblah") else (nvim -- "{{filename}}")'
-  # editAtLine: "nvim --line={{line}} {{filename}}"
-  # editAtLineAndWait: "nvim --block --line={{line}} {{filename}}"
-  # editInTerminal: true
-  # openDirInEditor: "nvim {{dir}}"
 confirmOnQuit: false
 # determines whether hitting 'esc' will quit the application when there is nothing to cancel/close
 quitOnTopLevelReturn: false
@@ -193,7 +188,6 @@ keybinding:
     viewResetOptions: "D"
     fetch: "f"
     toggleTreeView: "`"
-    openMergeTool: "M"
     openStatusFilter: "<c-b>"
   branches:
     createPullRequest: "o"
