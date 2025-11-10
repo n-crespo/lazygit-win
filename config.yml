@@ -58,10 +58,10 @@ gui:
     rate: 50 # spinner rate in milliseconds
   statusPanelView: "dashboard" # one of 'dashboard' | 'allBranchesLog'
 git:
-  paging:
-    colorArg: always
-    externalDiffCommand: "C:/Users/nicol/AppData/Local/lazygit/delta-diff.ps1"
-    # pager: "delta --paging=never --syntax-theme=gruvbox-dark"
+  pagers:
+    # - externalDiffCommand: "C:/Users/nicol/AppData/Local/lazygit/delta-diff.ps1"
+    - externalDiffCommand: "C:/Users/nicol/AppData/Local/lazygit/delta-diff.bat"
+  # pager: "delta --paging=never --syntax-theme=gruvbox-dark"
   commit:
     signOff: false
     autoWrapCommitMessage: true # automatic WYSIWYG wrapping of the commit message as you type
