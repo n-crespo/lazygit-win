@@ -1,5 +1,6 @@
 @echo off
 
+REM https://github.com/jesseduffield/lazygit/issues/1453#issuecomment-3457250276
 set "old=%~2"
 set "new=%~5"
 set "target=%~1"
