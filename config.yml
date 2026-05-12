@@ -6,6 +6,8 @@ promptToReturnFromSubprocess: false # display confirmation when subprocess termi
 git:
   pagers:
     - externalDiffCommand: "C:/Users/nicol/AppData/Local/lazygit/delta-diff.bat"
+    # - colorArg: always
+    # pager: "delta --paging=never --syntax-theme=gruvbox-dark"
 os:
   copyToClipboardCmd: "" # See 'Custom Command for Copying to Clipboard' section
   editPreset: "nvim" # see 'Configuring File Editing' section
