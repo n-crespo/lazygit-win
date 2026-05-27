@@ -37,7 +37,7 @@ gui:
   border: "rounded" # one of 'single' | 'double' | 'rounded' | 'hidden'
 customCommands:
   # retrieved from: https://github.com/jesseduffield/lazygit/wiki/Custom-Commands-Compendium#conventional-commit
-  - key: "<C-c>"
+  - key: "<ctrl-c>"
     context: "global"
     description: "Create new conventional commit"
     prompts:
