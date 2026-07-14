@@ -5,9 +5,8 @@ notARepository: "skip" # one of: 'prompt' | 'create' | 'skip' | 'quit'
 promptToReturnFromSubprocess: false # display confirmation when subprocess terminates
 git:
   pagers:
-    - externalDiffCommand: "C:/Users/nicol/AppData/Local/lazygit/delta-diff.bat"
-    # - colorArg: always
-    # pager: "delta --paging=never --syntax-theme=gruvbox-dark"
+    - pager: 'delta --dark --paging=never --line-numbers --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"'
+    # - externalDiffCommand: "C:/Users/necresp/AppData/Local/lazygit/delta-diff.bat"
 os:
   copyToClipboardCmd: "" # See 'Custom Command for Copying to Clipboard' section
   editPreset: "nvim" # see 'Configuring File Editing' section
