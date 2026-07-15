@@ -3,10 +3,12 @@ quitOnTopLevelReturn: false # determines whether hitting 'esc' will quit the app
 disableStartupPopups: true
 notARepository: "skip" # one of: 'prompt' | 'create' | 'skip' | 'quit'
 promptToReturnFromSubprocess: false # display confirmation when subprocess terminates
+services:
+  'cee-gitlab.sandia.gov': 'gitlab:cee-gitlab.sandia.gov'
 git:
   pagers:
     - pager: 'delta --dark --paging=never --line-numbers --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"'
-    # - externalDiffCommand: "C:/Users/necresp/AppData/Local/lazygit/delta-diff.bat"
+  # - externalDiffCommand: "C:/Users/necresp/AppData/Local/lazygit/delta-diff.bat"
 os:
   copyToClipboardCmd: "" # See 'Custom Command for Copying to Clipboard' section
   editPreset: "nvim" # see 'Configuring File Editing' section
@@ -34,3 +36,9 @@ gui:
   showFileIcons: true # for hiding file icons in the file views
   commandLogSize: 8
   border: "rounded" # one of 'single' | 'double' | 'rounded' | 'hidden'
+customCommands:
+  - key: "G"
+    command: "glab mr view -w {{.SelectedLocalBranch.UpstreamBranch}}"
+    context: "localBranches"
+    description: "Go to MR in gitlab"
+    output: log
