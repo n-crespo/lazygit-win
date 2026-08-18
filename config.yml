@@ -6,10 +6,10 @@ promptToReturnFromSubprocess: false # display confirmation when subprocess termi
 services:
   "cee-gitlab.sandia.gov": "gitlab:cee-gitlab.sandia.gov"
 git:
-  pagers:
-    - pager: 'delta --dark --paging=never --line-numbers --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"'
-    - pager: 'delta --dark --paging=never --line-numbers --side-by-side --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"'
-  # - externalDiffCommand: "C:/Users/necresp/AppData/Local/lazygit/delta-diff.bat"
+  diffRenderers:
+    - command: 'delta --dark --paging=never --line-numbers --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"'
+    - command: 'delta --dark --paging=never --line-numbers --side-by-side --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"'
+      # - externalDiffCommand: "C:/Users/necresp/AppData/Local/lazygit/delta-diff.bat"
 os:
   copyToClipboardCmd: "" # See 'Custom Command for Copying to Clipboard' section
   editPreset: "nvim" # see 'Configuring File Editing' section
