@@ -49,7 +49,7 @@ customCommands:
     context: "localBranches"
     description: "Go to MR in gitlab"
     output: log
-  - key: "P"
+  - key: "alt+p"
     command: "git push {{.SelectedRemote.Name}} {{.SelectedLocalCommit.Sha}}:{{.SelectedLocalBranch.Name}}"
     context: "commits"
     loadingText: "Pushing commit..."
