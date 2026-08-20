@@ -37,6 +37,12 @@ gui:
   showFileIcons: true # for hiding file icons in the file views
   commandLogSize: 8
   border: "rounded" # one of 'single' | 'double' | 'rounded' | 'hidden'
+keybinding:
+  universal:
+    quit:
+      - q
+      - <ctrl+c>
+      - <ctrl+g>
 customCommands:
   - key: "G"
     command: "glab mr view -w {{.SelectedLocalBranch.UpstreamBranch}}"
